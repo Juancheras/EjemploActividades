@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-"cebolla" 
-=======
-"anana" 
->>>>>>> anana
+"Anan " 
+"Anan " 
