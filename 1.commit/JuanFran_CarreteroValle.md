@@ -1,4 +1,4 @@
-## Ejercicio 1
+## Commits
 
 ### 1.1. Preguntas
 
@@ -23,89 +23,89 @@
 7. **En sus propias palabras, ¿qué es un commit?**  
    Un commit es una instantánea del estado actual del proyecto en un momento dado. Al hacer un commit, se guardan los cambios realizados en los archivos del repositorio, junto con un mensaje que describe esos cambios. Esto permite llevar un historial de modificaciones y facilita la colaboración en proyectos.
 
-### 1.2. Ejercicio Práctico - Con explicaciones
+## 1.2. Ejercicio Práctico
 
-# 1. Crear archivo nombre_apellido.txt
-# Este paso es simple, puedes usar:
-touch juan_perez.txt   # Reemplaza con tu nombre
+1. **Crear archivo nombre_apellido.txt**
+Este paso es simple, puedes usar:
+`touch JuanFran_CarrteroValle.txt`
 
-# 2. Editar sandwich.txt
-# Puedes usar un editor de texto o el comando echo:
-echo "Pan integral
+2. **Editar sandwich.txt**
+Puedes usar un editor de texto o el comando echo:
+`echo "Pan integral
 Jamón
 Queso
 Lechuga
-Tomate" > sandwich.txt
+Tomate" > sandwich.txt`
 
-# 3. Guardar estado del git status
-# Ejecutar:
-git status >> JuanFran_CarreteroValle.txt
-# La salida mostrará archivos sin seguimiento (untracked files)
-# y cambios no confirmados (unstaged changes)
+3. **Guardar estado del git status**
+Ejecutar:
+`git status >> JuanFran_CarreteroValle.txt`
+La salida mostrará archivos sin seguimiento (untracked files)
+y cambios no confirmados (unstaged changes)
 
-# 4. Agregar sandwich.txt al staging
-git add sandwich.txt
-# Este comando prepara el archivo para ser commiteado
+4. **Agregar sandwich.txt al staging**
+`git add sandwich.txt`
+Este comando prepara el archivo para ser commiteado
 
-# 5. Verificar cambios en status
-git status
-# Ahora verás el archivo en "Changes to be committed"
-# El archivo pasó de untracked a staged
+5. **Verificar cambios en status**
+`git status`
+Ahora verás el archivo en "Changes to be committed"
+El archivo pasó de untracked a staged
 
-# 6. Realizar primer commit
-git commit -m "Agrego mi sandwich.txt"
-# Esto crea el primer punto de control en la historia
+6. **Realizar primer commit**
+`git commit -m "Agrego mi sandwich.txt"`
+Esto crea el primer punto de control en la historia
 
-# 7. Verificar nuevo status
-git status
-# Ahora debería mostrar "working tree clean"
+7. **Verificar nuevo status**
+`git status`
+Ahora debería mostrar "working tree clean"
 
-# 8. Agregar salsas y nuevo commit
-echo "Mayonesa
+8. **Agregar salsas y nuevo commit**
+`echo "Mayonesa
 Mostaza
-Salsa picante" >> sandwich.txt
-git add sandwich.txt
-git commit -m "Agrego salsas"
+Salsa picante" >> sandwich.txt`
+`git add sandwich.txt`
+`git commit -m "Agrego salsas"`
 
-# 9. Revisar historial
-git log >> JuanFran_CarreteroValle.txt
-# Los commits aparecen en orden cronológico inverso
-# (más reciente primero)
+9. **Revisar historial**
+`git log >> JuanFran_CarreteroValle.txt`
+Los commits aparecen en orden cronológico inverso
+(más reciente primero)
 
-# 10. Variaciones de git log
-# 10.1 Formato compacto
-git log --oneline
-# 10.2 Ver estadísticas de cambios
-git log --stat
+10. **Variaciones de git log**
+10.1 **Formato compacto**
+`git log --oneline`
+10.2 **Ver estadísticas de cambios**
+`git log --stat`
 
-# 11. Comparar commits
-# Usar los hashes de los commits:
-git diff <hash-commit1> <hash-commit2>
-# En Windows:
-# git difftool --tool=meld <hash>
-# En Linux:
-# git difftool --tool=opendiff <hash>
+11. **Comparar commits**
+Usar los hashes de los commits:
+`git diff <hash-commit1> <hash-commit2>`
+En Windows:
+`git difftool --tool=meld <hash>`
+En Linux:
+`git difftool --tool=opendiff <hash>`
 
-# 12. Crear segundo archivo
-echo "Pan de centeno
+12. **Crear segundo archivo**
+`echo "Pan de centeno
 Atún
-Aguacate" > sandwich2.txt
+Aguacate" > sandwich2.txt`
 
-# 13. Agregar al repositorio
-git add sandwich2.txt
-git commit -m "Agrego sandwich2.txt"
+13. **Agregar al repositorio**
+`git add sandwich2.txt`
+`git commit -m "Agrego sandwich2.txt"`
 
-# 14. Renombrar archivo
-git mv sandwich2.txt sandwich2_feo.txt
-git commit -m "Renombro sandwich2 a sandwich2_feo"
-# El status mostrará el archivo como renamed
+14. **Renombrar archivo**
+`git mv sandwich2.txt sandwich2_feo.txt`
+`git commit -m "Renombro sandwich2 a sandwich2_feo"`
+El status mostrará el archivo como renamed
 
-# 15. Borrar archivo
-git rm sandwich2_feo.txt
-git commit -m "Elimino sandwich2_feo"
-# El status mostrará el archivo como deleted
+15. **Borrar archivo**
+`git rm sandwich2_feo.txt`
+`git commit -m "Elimino sandwich2_feo"`
+El status mostrará el archivo como deleted
 
-# 16. Revisar historial completo
-git log --stat
-# Mostrará todos los cambios con estadísticas
-# incluyendo archivos añadidos, renombrados y eliminados
+16. **Revisar historial completo**
+`git log --stat`
+Mostrará todos los cambios con estadísticas
+incluyendo archivos añadidos, renombrados y eliminados
